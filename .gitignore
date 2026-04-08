@@ -1,0 +1,21 @@
+# Database and data files (never commit these)
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary uploads
+uploads/
+tmp/
