@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: pwc-crime-dashboard
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: DATA_DIR
+        value: /data
+    disk:
+      name: arrests-data
+      mountPath: /data
+      sizeGB: 1
